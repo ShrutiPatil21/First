@@ -6,12 +6,13 @@ using System.Web;
 using OMRWebApp.Models;
 using System.Data.Entity;
 using MySql.Data.EntityFramework;
-
+// this a emp class
 namespace OMRWebApp.DAL
 {
     [DbConfigurationType(typeof(MySqlEFConfiguration))]
     public class EmployeeDALOMR: DbContext
     {
+        public DbSet<EmployeeBOL> emp { get; set; }
         public DbSet<EmployeeBOL> emp { get; set; }
         public EmployeeDALOMR() : base("WebDataCon")
         {
