@@ -6,7 +6,7 @@ using System.Web;
 using OMRWebApp.Models;
 using System.Data.Entity;
 using MySql.Data.EntityFramework;
-
+// this is a code
 namespace OMRWebApp.DAL
 {
     [DbConfigurationType(typeof(MySqlEFConfiguration))]
